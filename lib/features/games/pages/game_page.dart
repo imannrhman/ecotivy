@@ -26,17 +26,35 @@ class GamePage extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Container(
-
                     decoration: BoxDecoration(
                       color: Colors.white,
                       borderRadius: BorderRadius.circular(20),
                     ),
                     padding: const EdgeInsets.all(15),
                     child: const Row(
+                      crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         Icon(Icons.info_outline_rounded),
                         SizedBox(width: 10,),
                         Expanded(child: Text("Ayo kumpulkan poin sebanyak banyaknya!", style: TextStyle(
+                          fontSize: 16,
+                        ),))
+                      ],
+                    ),
+                  ),
+                  const SizedBox(height: 10,),
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(20),
+                    ),
+                    padding: const EdgeInsets.all(15),
+                    child: const Row(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        Icon(Icons.info_outline_rounded),
+                        SizedBox(width: 10,),
+                        Expanded(child: Text("Jawablah Pertanyaan Berikut Secara Berkelompok!", style: TextStyle(
                           fontSize: 16,
                         ),))
                       ],

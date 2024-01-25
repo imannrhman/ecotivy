@@ -91,7 +91,7 @@ class _TutorialPageState extends State<TutorialPage> {
                       ),
                       padding: const EdgeInsets.all(20),
                       child: HtmlWidget(
-                        '<iframe width="590" height="475" src="https://edpuzzle.com/embed/media/65702cb498952d41865a6397" frameborder="0" allowfullscreen></iframe>',
+                        '<iframe width="590" height="475" src="https://edpuzzle.com/embed/media/65ab53b4f033a1084abce2ba" frameborder="0" allowfullscreen></iframe>',
                         factoryBuilder: () => MyWidgetFactory(),
                       ),
                     ),

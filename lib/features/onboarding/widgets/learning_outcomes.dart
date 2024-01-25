@@ -46,7 +46,7 @@ class LearningOutcomes extends StatelessWidget {
                     ),
                     const SizedBox(height: 17,),
                     const Text(
-                      """“ECOTIVY”  merupakan media pembelajaran interaktif berbasis website yang dapat digunakan dalam pembelajaran muatan IPS materi Kegiatan Ekonomi untuk Peserta Didik kelas 4 SD""",
+                      """“ECOTIVY”  merupakan media pembelajaran interaktif berbasis website yang dapat digunakan dalam pembelajaran muatan IPS materi Kegiatan Ekonomi untuk Peserta Didik kelas 4 SD.""",
                       style: TextStyle(
                         color: Color(0xFF949292),
                         fontWeight: FontWeight.w400,
@@ -87,7 +87,7 @@ class LearningOutcomes extends StatelessWidget {
                       )),
                     ),
                     const SizedBox(height: 17,),
-                    const Text("""Setelah mengakses media pembelajaran “ECOTIVY”, peserta didik diharapkan mampu membedakan antara kebutuhan dan keinginan mengenai nilai mata uang, dan mendemostrasikan bagaimana uang digunakan untuk memenuhi kebutuhan hidup sehari-hari melalui kegiatan ekonomi""",
+                    const Text("""Setelah mengakses media pembelajaran “ECOTIVY”, peserta didik diharapkan mampu membedakan antara kebutuhan dan keinginan mengenai nilai mata uang, dan mendemostrasikan bagaimana uang digunakan untuk memenuhi kebutuhan hidup sehari-hari melalui kegiatan ekonomi.""",
                       style: TextStyle(
                           color: Color(0xFF949292),
                           fontWeight: FontWeight.w400,

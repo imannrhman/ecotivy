@@ -16,7 +16,7 @@ class OnBoardingCubit extends Cubit<OnBoardingState> {
     emit(state.copyWith(
       controller: PageController(viewportFraction: 1, keepPage: true),
       page: 0,
-      totalPage: 2,
+      totalPage: 3,
     ));
   }
 

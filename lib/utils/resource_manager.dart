@@ -14,6 +14,12 @@ class Resource {
   static const meetingIcon = 'meeting_icon';
   static const conversationIcon = 'conversation_icon';
   static const congratsIcon = 'congrats_icon';
+  static const knowledgeIcon = 'knowledge_icon';
+  static const avatarMan = 'avatar/man';
+  static const avatarWoman1 = 'avatar/woman_1';
+  static const avatarWoman2 = 'avatar/woman_2';
+  static const avatarWoman3 = 'avatar/woman_3';
+  static const avatarWoman4 = 'avatar/woman_4';
 
   static List<String> preLoadResources = [
     appIcon,

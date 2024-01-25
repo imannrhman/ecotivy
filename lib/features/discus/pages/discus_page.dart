@@ -66,7 +66,7 @@ class DiscusPage extends StatelessWidget {
                       backgroundColor: const Color(0xFF00CE8E),
                     ),
                     onPressed: () {
-                      context.go('/conclusion');
+                      context.go('/knowledge');
                     },
                     child:  const Text("Selanjutnya",
                     )),

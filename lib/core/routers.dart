@@ -6,6 +6,7 @@ import 'package:ecotivy/features/discus/pages/discus_page.dart';
 import 'package:ecotivy/features/final/pages/final_page.dart';
 import 'package:ecotivy/features/games/pages/game_page.dart';
 import 'package:ecotivy/features/group/pages/group_page.dart';
+import 'package:ecotivy/features/knowladge/pages/knowledge_page.dart';
 import 'package:ecotivy/features/onboarding/cubit/on_boarding_cubit.dart';
 import 'package:ecotivy/features/onboarding/pages/onboarding_page.dart';
 import 'package:ecotivy/features/splash/cubit/splash_cubit.dart';
@@ -84,6 +85,15 @@ final router = GoRouter(
       pageBuilder: (context, state) => CustomTransitionPage(
         key: state.pageKey,
         child: const GroupPage(),
+        transitionsBuilder: (context, animation, secondaryAnimation, child) =>
+            FadeTransition(opacity: animation, child: child),
+      ),
+    ),
+    GoRoute(
+      path: '/knowledge',
+      pageBuilder: (context, state) => CustomTransitionPage(
+        key: state.pageKey,
+        child: const KnowledgePage(),
         transitionsBuilder: (context, animation, secondaryAnimation, child) =>
             FadeTransition(opacity: animation, child: child),
       ),

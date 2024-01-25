@@ -47,13 +47,13 @@ class Instruction extends StatelessWidget {
             Column(
               children: [
                 {
-                  1: "Media pembelajaran interaktif “ECOTIVY” membutuhkan jaringan internet untu mengaksesnya."
+                  1: "Media pembelajaran interaktif “ECOTIVY” membutuhkan jaringan internet untuk mengaksesnya."
                 },
                 {
-                  2: "Dibutuhkan dampingan guru untuk mengikuti alur pembelajaran dalam media pembelajaran interaktif “ECOTIVY”"
+                  2: "Dibutuhkan dampingan guru untuk mengikuti alur pembelajaran dalam media pembelajaran interaktif “ECOTIVY”."
                 },
                 {
-                  3: "Ikuti setiap perintah yang terdapat pada media pembelajaran interaktif “ECOTIVY” yakni Menyimak Video, Membuat Kelompok Kecil, Mengumpulkan PointSebanyak-Banyaknya Melalui Quiz, dan Mari Berdiskusi."
+                  3: "Ikuti setiap perintah yang terdapat pada media pembelajaran interaktif “ECOTIVY” yakni Menyimak Video, Membuat Kelompok Kecil, Mengumpulkan Point Sebanyak-Banyaknya Melalui Quiz, dan Mari Berdiskusi."
                 },
               ]
                   .map((e) => Row(

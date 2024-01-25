@@ -1,5 +1,6 @@
 import 'package:ecotivy/di/get_it.dart';
 import 'package:ecotivy/features/onboarding/cubit/on_boarding_cubit.dart';
+import 'package:ecotivy/features/onboarding/widgets/expert_validation_profile.dart';
 import 'package:ecotivy/features/onboarding/widgets/instruction.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
@@ -21,17 +22,15 @@ class OnBoardingPage extends StatelessWidget {
         backgroundColor: const Color(0xFFF5F5F5),
         body: BlocBuilder<OnBoardingCubit, OnBoardingState>(
           builder: (context, state) {
-
             return ListView(
               children: [
                 const Header(),
                 if (state.controller != null)
                   SizedBox(
-                    height: ResponsiveBreakpoints.of(context)
-                            .largerThan(TABLET)
-                        ? 525
+                    height: ResponsiveBreakpoints.of(context).largerThan(TABLET)
+                        ? 650
                         : ResponsiveBreakpoints.of(context).largerThan(MOBILE)
-                            ? 600
+                            ? 700
                             : 800,
                     child: PageView(
                       controller: state.controller,
@@ -42,17 +41,24 @@ class OnBoardingPage extends StatelessWidget {
                       },
                       pageSnapping: true,
                       dragStartBehavior: DragStartBehavior.start,
-
-                      children: const [Padding(
-                        padding: EdgeInsets.symmetric(horizontal: 20),
-                        child: LearningOutcomes(),
-                      ), Padding(
-                        padding: EdgeInsets.symmetric(horizontal: 20),
-                        child: DeveloperProfile(),
-                      ), Padding(
-                        padding: EdgeInsets.symmetric(horizontal: 20),
-                        child: Instruction(),
-                      )],
+                      children: const [
+                        Padding(
+                          padding: EdgeInsets.symmetric(horizontal: 20),
+                          child: LearningOutcomes(),
+                        ),
+                        Padding(
+                          padding: EdgeInsets.symmetric(horizontal: 20),
+                          child: DeveloperProfile(),
+                        ),
+                        Padding(
+                          padding: EdgeInsets.symmetric(horizontal: 20),
+                          child: ExpertValidationProfile(),
+                        ),
+                        Padding(
+                          padding: EdgeInsets.symmetric(horizontal: 20),
+                          child: Instruction(),
+                        ),
+                      ],
                     ),
                   ),
                 const SizedBox(
@@ -88,21 +94,24 @@ class OnBoardingPage extends StatelessWidget {
                             foregroundColor: Colors.white,
                             backgroundColor: const Color(0xFF00CE8E),
                           ),
-
                           onPressed: () {
-                           if (state.isComplete) {
-                             context.go('/tutorial');
-                           } else {
-                             context.read<OnBoardingCubit>().nextPages();
-                           }
+                            if (state.isComplete) {
+                              context.go('/tutorial');
+                            } else {
+                              context.read<OnBoardingCubit>().nextPages();
+                            }
                           },
-                          child:  Text(state.isComplete ? "Materi Selanjutnya" : "Selanjutnya",
-
+                          child: Text(
+                            state.isComplete
+                                ? "Materi Selanjutnya"
+                                : "Selanjutnya",
                           )),
                     ),
                   ),
                 ),
-                const SizedBox(height: 24,),
+                const SizedBox(
+                  height: 24,
+                ),
               ],
             );
           },
